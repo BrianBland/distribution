@@ -11,6 +11,7 @@ machine:
     BASE_DIR: src/github.com/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME
     BASE_OLD: ../../../$HOME/.gvm/pkgsets/old/global/$BASE_DIR
     BASE_STABLE: ../../../$HOME/.gvm/pkgsets/stable/global/$BASE_DIR
+  # Workaround Circle parsing dumb bugs and/or YAML wonkyness
     CIRCLE_PAIN: "mode: set"
 
   hosts:
